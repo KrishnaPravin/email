@@ -1,0 +1,44 @@
+{
+  "name": "Harish Venkatesh",
+  "skillReadinessScore": "78",
+  "profession": "Creative Professional",
+  "playStoreUrl": "https://google.com?q=1",
+  "appStoreUrl": "https://google.com?q=1",
+  "exploreGleacUrl": "https://google.com",
+  "masterTestUrl": "https://google.com",
+  "unsubscribeUrl": "https://google.com",
+  "job1": "Machine Learning Expert",
+  "job2": "",
+  "job3": "Machine Learning Expert",
+  "job4": "Data Scientist",
+  "skill": [
+    {
+      "name": "improvisation",
+      "percent": "78",
+      "diff": "11",
+      "job": "Machine Learning Expert",
+      "is_positive_change": true
+    },
+    {
+      "name": "Novelty Seeking",
+      "percent": "67",
+      "diff": "0",
+      "job": "Fitness Counselor",
+      "is_positive_change": true
+    },
+    {
+      "name": "Leadership",
+      "percent": "39",
+      "diff": "28",
+      "job": "Machine Learning Expert",
+      "is_positive_change": false
+    },
+    {
+      "name": "Improvisation",
+      "percent": "100",
+      "diff": "33",
+      "job": "Data Scientist",
+      "is_positive_change": true
+    }
+  ]
+}

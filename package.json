@@ -1,0 +1,28 @@
+{
+  "name": "voc-email-template",
+  "version": "1.0.0",
+  "description": "The Weekly VoC Email template that is currently sent via SendGrid",
+  "main": "render-handlebar.js",
+  "scripts": {
+    "render": "node render-handlebar.js --data data.json --templateFile email.html",
+    "watch": "watch 'npm run render' ./ --ignoreDirectoryPattern=/output/"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.6",
+    "inline-css": "^2.6.3",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "watch": "^1.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solvvy/voc-email-template.git"
+  },
+  "author": "Vignesh PT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solvvy/voc-email-template/issues"
+  },
+  "homepage": "https://github.com/solvvy/voc-email-template#readme"
+}
