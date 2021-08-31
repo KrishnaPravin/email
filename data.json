@@ -19,27 +19,31 @@
   ],
   "skills": [
     {
-      "name": "improvisation",
+      "name": "Improvisation",
       "percent": "78",
       "diff": "11",
+      "empty": "12",
       "is_positive_change": true
     },
     {
       "name": "Novelty Seeking",
       "percent": "67",
       "diff": "0",
+      "empty": "33",
       "is_positive_change": true
     },
     {
       "name": "Leadership",
       "percent": "39",
       "diff": "28",
+      "empty": "33",
       "is_positive_change": false
     },
     {
       "name": "Improvisation",
       "percent": "100",
       "diff": "33",
+      "empty": "0",
       "is_positive_change": true
     }
   ]

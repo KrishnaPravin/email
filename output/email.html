@@ -201,7 +201,7 @@
                           </table>
                         </td>
                         <td style="vertical-align: top">
-                          <table>
+                          <table style="width:100%;">
                             <tr>
                               <td class="subtitle">MY SUPERIOR HUMAN SKILLS</td>
                             </tr>
@@ -209,7 +209,7 @@
                             {{#each skills}}
                             <tr>
                               <td>
-                                <table>
+                                <table style="width:100%;">
                                   <tbody>
                                     <tr>
                                       <td style="width: 50%">{{this.name}}</td>
@@ -231,7 +231,20 @@
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td class="base_bar_td" colspan="3">
+                                      <td colspan="3" style="padding: 10px 0;">
+                                        <table cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+                                          <tr>
+                                            <td cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px; height: 4px; background-color:#610c70; width: {{this.percent}}%;"></td>
+                                            {{#if this.is_positive_change}}
+                                            <td cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px; height: 4px;  width: 0;"></td>
+                                            {{else}}
+                                            <td cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px; height: 4px; background-color:#0096a5; width: {{this.diff}}%;"></td>
+                                            {{/if}}
+                                            <td cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px; height: 4px; background: color #e4e8e8; width: {{this.empty}}%;"></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                      <!-- <td class="base_bar_td" colspan="3">
                                         <div class="base_bar">
                                           <div class="min_pass_bar">
                                             <div></div>
@@ -241,7 +254,7 @@
                                             style="width: {{this.percent}}%"
                                           ></div>
                                         </div>
-                                      </td>
+                                      </td> -->
                                     </tr>
                                   </tbody>
                                 </table>
