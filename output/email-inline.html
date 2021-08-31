@@ -153,19 +153,86 @@
                       </tbody>
                     </table>
 
-                    <table style="width: 100%; padding: 0 20px">
+                    <table style="padding: 0 20px; width: 100%">
+                      <tr>
+                        <td style="vertical-align: top; width: 50%">
+                          <table>
+                            <tr>
+                              <td class="subtitle" style="color: #c5caca; font-weight: bold;">
+                                BEST JOBS FOR MY STRENGTHS
+                              </td>
+                            </tr>
+
+                            {{#each jobs}}
+                            <tr>
+                              <td class="job_item" style="border-radius: 10px; color: #0096a5; font-size: 18px; font-weight: bold; padding: 5px;">
+                                <table>
+                                  <tr>
+                                    <td style="background-color: #0096a54a; border-radius: 15px; padding: 10px;">{{this}}</td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            {{/each}}
+                          </table>
+                        </td>
+                        <td style="vertical-align: top">
+                          <table>
+                            <tr>
+                              <td class="subtitle" style="color: #c5caca; font-weight: bold;">MY SUPERIOR HUMAN SKILLS</td>
+                            </tr>
+
+                            {{#each skills}}
+                            <tr>
+                              <td>
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <td style="width: 50%">{{this.name}}</td>
+                                      <td class="obtained_percent" style="color: #610c70 !important; font-weight: bold; width: 10%;">
+                                        {{this.percent}}%
+                                      </td>
+                                      <td class="diff_percent" style="color: #0096a5; font-weight: bold; width: 20%;">
+                                        {{#if this.is_positive_change}}
+                                        <img src="teal-triangle-up.png" alt="arrow down">
+                                        {{else}}
+                                        <img src="teal-triangle-down.png" alt="arrow down">
+                                        {{/if}} {{this.diff}}%
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="base_bar_td" colspan="3" style="padding-top: 5px;">
+                                        <div class="base_bar" style="background-color: #e4e8e8 !important; color: #610c70 !important;">
+                                          <div class="min_pass_bar" style="background-color: #0096a5; height: 3px; margin-bottom: -3px; width: 67%;">
+                                            <div style="background: #0096a5; border-radius: 25%; float: right; height: 20px; margin-top: -9px; width: 4px;"></div>
+                                          </div>
+                                          <div class="obtained_bar" style="background-color: #7a098e !important; border-radius: 5px; color: #d2edea !important; height: 3px; width: {{this.percent}}%;"></div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            {{/each}}
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- <table style="width: 100%; padding: 0 20px">
                       <tbody>
                         <tr>
-                          <td class="subtitle" style="color: #c5caca; font-weight: bold;">BEST JOBS FOR MY STRENGTHS</td>
-                          <td class="subtitle" style="color: #c5caca; font-weight: bold;">MY SUPERIOR HUMAN SKILLS</td>
+                          <td class="subtitle">BEST JOBS FOR MY STRENGTHS</td>
+                          <td class="subtitle">MY SUPERIOR HUMAN SKILLS</td>
                         </tr>
 
                         {{#each skill}}
                         <tr>
-                          <td class="job_item" style="border-radius: 10px; color: #0096a5; font-size: 18px; font-weight: bold; padding: 5px;">
+                          <td class="job_item">
                             <table>
                               <tr>
-                                <td style="background-color: #0096a54a; border-radius: 15px; padding: 10px;">{{this.job}}</td>
+                                <td>{{this.job}}</td>
                               </tr>
                             </table>
                           </td>
@@ -174,24 +241,33 @@
                               <tbody>
                                 <tr>
                                   <td style="width: 50%">{{this.name}}</td>
-                                  <td class="obtained_percent" style="color: #610c70 !important; font-weight: bold; width: 10%;">
+                                  <td class="obtained_percent">
                                     {{this.percent}}%
                                   </td>
-                                  <td class="diff_percent" style="color: #0096a5; font-weight: bold; width: 20%;">
+                                  <td class="diff_percent">
                                     {{#if this.is_positive_change}}
-                                    <img src="teal-triangle-up.png" alt="arrow down">
+                                    <img
+                                      src="teal-triangle-up.png"
+                                      alt="arrow down"
+                                    />
                                     {{else}}
-                                    <img src="teal-triangle-down.png" alt="arrow down">
+                                    <img
+                                      src="teal-triangle-down.png"
+                                      alt="arrow down"
+                                    />
                                     {{/if}} {{this.diff}}%
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td class="base_bar_td" colspan="3" style="padding-top: 5px;">
-                                    <div class="base_bar" style="background-color: #e4e8e8 !important; color: #610c70 !important;">
-                                      <div class="min_pass_bar" style="background-color: #0096a5; height: 3px; margin-bottom: -3px; width: 67%;">
-                                        <div style="background: #0096a5; border-radius: 25%; float: right; height: 20px; margin-top: -9px; width: 4px;"></div>
+                                  <td class="base_bar_td" colspan="3">
+                                    <div class="base_bar">
+                                      <div class="min_pass_bar">
+                                        <div></div>
                                       </div>
-                                      <div class="obtained_bar" style="background-color: #7a098e !important; border-radius: 5px; color: #d2edea !important; height: 3px; width: {{this.percent}}%;"></div>
+                                      <div
+                                        class="obtained_bar"
+                                        style="width: {{this.percent}}%"
+                                      ></div>
                                     </div>
                                   </td>
                                 </tr>
@@ -201,7 +277,7 @@
                         </tr>
                         {{/each}}
                       </tbody>
-                    </table>
+                    </table> -->
 
                     <table cellpadding="0" cellspacing="0" border="0" style="padding-left: 30px">
                       <tbody>
@@ -213,8 +289,8 @@
                                 padding-top: 50px;
                               ">
                             <map name="download-app-image-map">
-                              <area target alt="Google Play Store" title="Google Play Store" href="{{playStoreUrl}}" coords="200,50,250,80" shape="rect">
-                              <area target alt="Apple App Store" title="Apple App Store" href="{{appStoreUrl}}" coords="68,20,120,75" shape="rect">
+                              <area target alt="Google Play Store" title="Google Play Store" href="{{playStoreUrl}}" coords="200,50,220,70" shape="rect">
+                              <area target alt="Apple App Store" title="Apple App Store" href="{{appStoreUrl}}" coords="225,50,245,70" shape="rect">
                             </map>
                           </td>
                         </tr>

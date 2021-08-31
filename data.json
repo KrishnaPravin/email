@@ -11,33 +11,35 @@
   "job2": "",
   "job3": "Machine Learning Expert",
   "job4": "Data Scientist",
-  "skill": [
+  "jobs": [
+    "Machine Learning Expert",
+    "Fitness Counselor",
+    "Machine Learning Expert",
+    "Data Scientist"
+  ],
+  "skills": [
     {
       "name": "improvisation",
       "percent": "78",
       "diff": "11",
-      "job": "Machine Learning Expert",
       "is_positive_change": true
     },
     {
       "name": "Novelty Seeking",
       "percent": "67",
       "diff": "0",
-      "job": "Fitness Counselor",
       "is_positive_change": true
     },
     {
       "name": "Leadership",
       "percent": "39",
       "diff": "28",
-      "job": "Machine Learning Expert",
       "is_positive_change": false
     },
     {
       "name": "Improvisation",
       "percent": "100",
       "diff": "33",
-      "job": "Data Scientist",
       "is_positive_change": true
     }
   ]

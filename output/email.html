@@ -177,63 +177,80 @@
                       </tbody>
                     </table>
 
-                    <table style="width: 100%; padding: 0 20px">
-                      <tbody>
-                        <tr>
-                          <td class="subtitle">BEST JOBS FOR MY STRENGTHS</td>
-                          <td class="subtitle">MY SUPERIOR HUMAN SKILLS</td>
-                        </tr>
+                    <table style="padding: 0 20px; width: 100%">
+                      <tr>
+                        <td style="vertical-align: top; width: 50%">
+                          <table>
+                            <tr>
+                              <td class="subtitle">
+                                BEST JOBS FOR MY STRENGTHS
+                              </td>
+                            </tr>
 
-                        {{#each skill}}
-                        <tr>
-                          <td class="job_item">
-                            <table>
-                              <tr>
-                                <td>{{this.job}}</td>
-                              </tr>
-                            </table>
-                          </td>
-                          <td>
-                            <table>
-                              <tbody>
-                                <tr>
-                                  <td style="width: 50%">{{this.name}}</td>
-                                  <td class="obtained_percent">
-                                    {{this.percent}}%
-                                  </td>
-                                  <td class="diff_percent">
-                                    {{#if this.is_positive_change}}
-                                    <img
-                                      src="teal-triangle-up.png"
-                                      alt="arrow down"
-                                    />
-                                    {{else}}
-                                    <img
-                                      src="teal-triangle-down.png"
-                                      alt="arrow down"
-                                    />
-                                    {{/if}} {{this.diff}}%
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="base_bar_td" colspan="3">
-                                    <div class="base_bar">
-                                      <div class="min_pass_bar">
-                                        <div></div>
-                                      </div>
-                                      <div
-                                        class="obtained_bar"
-                                        style="width: {{this.percent}}%"
-                                      ></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                        {{/each}}
-                      </tbody>
+                            {{#each jobs}}
+                            <tr>
+                              <td class="job_item">
+                                <table>
+                                  <tr>
+                                    <td>{{this}}</td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            {{/each}}
+                          </table>
+                        </td>
+                        <td style="vertical-align: top">
+                          <table>
+                            <tr>
+                              <td class="subtitle">MY SUPERIOR HUMAN SKILLS</td>
+                            </tr>
+
+                            {{#each skills}}
+                            <tr>
+                              <td>
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <td style="width: 50%">{{this.name}}</td>
+                                      <td class="obtained_percent">
+                                        {{this.percent}}%
+                                      </td>
+                                      <td class="diff_percent">
+                                        {{#if this.is_positive_change}}
+                                        <img
+                                          src="teal-triangle-up.png"
+                                          alt="arrow down"
+                                        />
+                                        {{else}}
+                                        <img
+                                          src="teal-triangle-down.png"
+                                          alt="arrow down"
+                                        />
+                                        {{/if}} {{this.diff}}%
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="base_bar_td" colspan="3">
+                                        <div class="base_bar">
+                                          <div class="min_pass_bar">
+                                            <div></div>
+                                          </div>
+                                          <div
+                                            class="obtained_bar"
+                                            style="width: {{this.percent}}%"
+                                          ></div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            {{/each}}
+                          </table>
+                        </td>
+                      </tr>
                     </table>
 
                     <table
