@@ -4,7 +4,7 @@
   "description": "The Weekly VoC Email template that is currently sent via SendGrid",
   "main": "render-handlebar.js",
   "scripts": {
-    "render": "node render-handlebar.js --data data.json --templateFile email.html",
+    "render": "node render-handlebar.js --data data.json --templateFile ./output/email.html",
     "watch": "watch 'npm run render' ./ --ignoreDirectoryPattern=/output/"
   },
   "dependencies": {
