@@ -112,11 +112,7 @@
                       <tbody>
                         <tr>
                           <td>
-                            <img
-                              src="banner.png"
-                              alt="Gleac Event Banner"
-                              style="width: 100%"
-                            />
+                            <img src="http://cdn.mcauto-images-production.sendgrid.net/6007f2d1ca63ad30/1f42a1a7-070b-4983-9964-efa0831592b8/1600x944.png" alt="Gleac Event Banner" style="width: 100%">
                           </td>
                         </tr>
                       </tbody>
@@ -125,17 +121,11 @@
                       <tbody>
                         <tr>
                           <td style="padding: 0 30px">
-                            <img
-                              src="stock-avatar.png"
-                              alt="avatar"
-                              width="150"
-                              height="150"
-                              style="
+                            <img src="http://cdn.mcauto-images-production.sendgrid.net/6007f2d1ca63ad30/f2d3df5a-41a2-4d3e-acfe-8790afdd194c/169x170.png" alt="avatar" width="150" height="150" style="
                                 border-radius: 50%;
                                 margin-top: -35px;
                                 border: 10px solid white;
-                              "
-                            />
+                              ">
                           </td>
                           <td style="padding-left: 35px">
                             <table>
@@ -149,12 +139,12 @@
                                       letter-spacing: 1.5;
                                     "
                                   >
-                                    {{name}}
+                                    Harish Venkatesh
                                   </td>
                                 </tr>
                                 <tr style="color: #0096a5">
                                   <td rowspan="2" style="font-size: 48px">
-                                    {{skillReadinessScore}}%
+                                    78%
                                   </td>
                                   <td
                                     style="
@@ -167,7 +157,7 @@
                                 </tr>
                                 <tr style="color: #0096a5">
                                   <td style="vertical-align: baseline">
-                                    <b>{{profession}}</b>
+                                    <b>Creative Professional</b>
                                   </td>
                                 </tr>
                               </tbody>
@@ -187,17 +177,42 @@
                               </td>
                             </tr>
 
-                            {{#each jobs}}
                             <tr>
                               <td class="job_item">
                                 <table>
                                   <tr>
-                                    <td>{{this}}</td>
+                                    <td>Machine Learning Expert</td>
                                   </tr>
                                 </table>
                               </td>
                             </tr>
-                            {{/each}}
+                            <tr>
+                              <td class="job_item">
+                                <table>
+                                  <tr>
+                                    <td>Fitness Counselor</td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="job_item">
+                                <table>
+                                  <tr>
+                                    <td>Machine Learning Expert</td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="job_item">
+                                <table>
+                                  <tr>
+                                    <td>Data Scientist</td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
                           </table>
                         </td>
                         <td style="vertical-align: top">
@@ -206,25 +221,20 @@
                               <td class="subtitle">MY SUPERIOR HUMAN SKILLS</td>
                             </tr>
 
-                            {{#each skills}}
                             <tr>
                               <td>
                                 <table style="width:100%;">
                                   <tbody>
                                     <tr>
-                                      <td style="width: 50%">{{this.name}}</td>
+                                      <td style="width: 50%">Improvisation</td>
                                       <td class="obtained_percent" style="color: #610c70 !important; font-weight: bold; width: 10%;">
-                                        {{this.percent}}%
+                                        78%
                                       </td>
                                       <td class="diff_percent" style="color: #0096a5; font-weight: bold; width: 4%;">
-                                        {{#if this.is_positive_change}}
                                         <img src="http://cdn.mcauto-images-production.sendgrid.net/6007f2d1ca63ad30/00de1dd8-f3b4-4899-934d-00a6d7aac06c/25x13.png" alt="arrow down">
-                                        {{else}}
-                                        <img src="http://cdn.mcauto-images-production.sendgrid.net/6007f2d1ca63ad30/5fb407a3-9b63-43a5-8014-fac20fb1aef9/25x13.png" alt="arrow down">
-                                        {{/if}}
                                       </td>
                                       <td class="diff_percent" style="color: #0096a5; font-weight: bold; width: 10%;">
-                                        {{this.diff}}%
+                                        11%
                                       </td>
                                     </tr>
                                     <tr>
@@ -233,21 +243,14 @@
                                           <tr>
                                             
                                             
-                                            {{#if this.is_positive_change}}
                                             <td cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px; width: 67%;"><div style="height: 4px; background-color:#610c70;"></div></td>
-                                            {{else}}
-                                            <td cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px; width: {{this.percent}}%;"><div style="height: 4px; background-color:#610c70;"></div></td>
-                                            <td style="width:{{diff}}%; "><div style="height: 4px; background-color:#0096a5;"></div></td>
-                                            {{/if}}
 
                                             <td style="height:15px; width:1%; background-color:#0096a5; border-radius:3px;"></td>
 
 
-                                            {{#if this.is_positive_change}}
-                                            <td cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px; width: {{diff}}%;"><div style="height: 4px; background-color:#610c70;"></div></td>
+                                            <td cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px; width: 11%;"><div style="height: 4px; background-color:#610c70;"></div></td>
                                           
-                                            {{/if}}
-                                            <td cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px;  width: {{this.empty}}%;"><div style="height: 4px; background-color: #e4e8e8;"></div></td>
+                                            <td cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px;  width: 22%;"><div style="height: 4px; background-color: #e4e8e8;"></div></td>
                                           </tr>
                                         </table>
                                       </td>
@@ -258,7 +261,7 @@
                                           </div>
                                           <div
                                             class="obtained_bar"
-                                            style="width: {{this.percent}}%"
+                                            style="width: 78%"
                                           ></div>
                                         </div>
                                       </td> -->
@@ -267,7 +270,152 @@
                                 </table>
                               </td>
                             </tr>
-                            {{/each}}
+                            <tr>
+                              <td>
+                                <table style="width:100%;">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width: 50%">Novelty Seeking</td>
+                                      <td class="obtained_percent" style="color: #610c70 !important; font-weight: bold; width: 10%;">
+                                        67%
+                                      </td>
+                                      <td class="diff_percent" style="color: #0096a5; font-weight: bold; width: 4%;">
+                                        <img src="http://cdn.mcauto-images-production.sendgrid.net/6007f2d1ca63ad30/00de1dd8-f3b4-4899-934d-00a6d7aac06c/25x13.png" alt="arrow down">
+                                      </td>
+                                      <td class="diff_percent" style="color: #0096a5; font-weight: bold; width: 10%;">
+                                        0%
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="5" style="padding:15px 0">
+                                        <table cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+                                          <tr>
+                                            
+                                            
+                                            <td cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px; width: 67%;"><div style="height: 4px; background-color:#610c70;"></div></td>
+
+                                            <td style="height:15px; width:1%; background-color:#0096a5; border-radius:3px;"></td>
+
+
+                                            <td cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px; width: 0%;"><div style="height: 4px; background-color:#610c70;"></div></td>
+                                          
+                                            <td cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px;  width: 33%;"><div style="height: 4px; background-color: #e4e8e8;"></div></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                      <!-- <td class="base_bar_td" colspan="3">
+                                        <div class="base_bar">
+                                          <div class="min_pass_bar">
+                                            <div></div>
+                                          </div>
+                                          <div
+                                            class="obtained_bar"
+                                            style="width: 67%"
+                                          ></div>
+                                        </div>
+                                      </td> -->
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <table style="width:100%;">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width: 50%">Leadership</td>
+                                      <td class="obtained_percent" style="color: #610c70 !important; font-weight: bold; width: 10%;">
+                                        39%
+                                      </td>
+                                      <td class="diff_percent" style="color: #0096a5; font-weight: bold; width: 4%;">
+                                        <img src="http://cdn.mcauto-images-production.sendgrid.net/6007f2d1ca63ad30/5fb407a3-9b63-43a5-8014-fac20fb1aef9/25x13.png" alt="arrow down">
+                                      </td>
+                                      <td class="diff_percent" style="color: #0096a5; font-weight: bold; width: 10%;">
+                                        28%
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="5" style="padding:15px 0">
+                                        <table cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+                                          <tr>
+                                            
+                                            
+                                            <td cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px; width: 39%;"><div style="height: 4px; background-color:#610c70;"></div></td>
+                                            <td style="width:28%; "><div style="height: 4px; background-color:#0096a5;"></div></td>
+
+                                            <td style="height:15px; width:1%; background-color:#0096a5; border-radius:3px;"></td>
+
+
+                                            <td cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px;  width: 33%;"><div style="height: 4px; background-color: #e4e8e8;"></div></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                      <!-- <td class="base_bar_td" colspan="3">
+                                        <div class="base_bar">
+                                          <div class="min_pass_bar">
+                                            <div></div>
+                                          </div>
+                                          <div
+                                            class="obtained_bar"
+                                            style="width: 39%"
+                                          ></div>
+                                        </div>
+                                      </td> -->
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <table style="width:100%;">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width: 50%">Improvisation</td>
+                                      <td class="obtained_percent" style="color: #610c70 !important; font-weight: bold; width: 10%;">
+                                        100%
+                                      </td>
+                                      <td class="diff_percent" style="color: #0096a5; font-weight: bold; width: 4%;">
+                                        <img src="http://cdn.mcauto-images-production.sendgrid.net/6007f2d1ca63ad30/00de1dd8-f3b4-4899-934d-00a6d7aac06c/25x13.png" alt="arrow down">
+                                      </td>
+                                      <td class="diff_percent" style="color: #0096a5; font-weight: bold; width: 10%;">
+                                        33%
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="5" style="padding:15px 0">
+                                        <table cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+                                          <tr>
+                                            
+                                            
+                                            <td cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px; width: 67%;"><div style="height: 4px; background-color:#610c70;"></div></td>
+
+                                            <td style="height:15px; width:1%; background-color:#0096a5; border-radius:3px;"></td>
+
+
+                                            <td cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px; width: 33%;"><div style="height: 4px; background-color:#610c70;"></div></td>
+                                          
+                                            <td cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px;  width: 0%;"><div style="height: 4px; background-color: #e4e8e8;"></div></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                      <!-- <td class="base_bar_td" colspan="3">
+                                        <div class="base_bar">
+                                          <div class="min_pass_bar">
+                                            <div></div>
+                                          </div>
+                                          <div
+                                            class="obtained_bar"
+                                            style="width: 100%"
+                                          ></div>
+                                        </div>
+                                      </td> -->
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
                           </table>
                         </td>
                       </tr>
@@ -282,21 +430,17 @@
                       <tbody>
                         <tr>
                           <td>
-                            <img
-                              src="download-apps-new.png"
-                              usemap="#download-app-image-map"
-                              style="
+                            <img src="http://cdn.mcauto-images-production.sendgrid.net/6007f2d1ca63ad30/8ecdb9bc-c2e3-4511-907d-7cb31c902963/462x40.png" usemap="#download-app-image-map" style="
                                 width: 250px;
                                 padding-bottom: 10px;
                                 padding-top: 50px;
-                              "
-                            />
+                              ">
                             <map name="download-app-image-map">
                               <area
                                 target=""
                                 alt="Google Play Store"
                                 title="Google Play Store"
-                                href="{{playStoreUrl}}"
+                                href="https://google.com?q&#x3D;1"
                                 coords="200,50,220,70"
                                 shape="rect"
                               />
@@ -304,7 +448,7 @@
                                 target=""
                                 alt="Apple App Store"
                                 title="Apple App Store"
-                                href="{{appStoreUrl}}"
+                                href="https://google.com?q&#x3D;1"
                                 coords="225,50,245,70"
                                 shape="rect"
                               />
@@ -323,7 +467,7 @@
                       <tbody>
                         <tr>
                           <td>
-                            <img src="gleac-app-qa.png" width="100%" />
+                            <img src="http://cdn.mcauto-images-production.sendgrid.net/6007f2d1ca63ad30/47e91803-7d03-4b49-9abc-8a3ec1c831fe/108x108.png" width="100%">
                           </td>
                         </tr>
                       </tbody>
@@ -333,7 +477,7 @@
                       <tbody>
                         <tr>
                           <td>
-                            <img src="screenshot-section.png" width="100%" />
+                            <img src="http://cdn.mcauto-images-production.sendgrid.net/6007f2d1ca63ad30/9a97d375-881e-4758-89ad-ffecf3a85c2d/1619x224.png" width="100%">
                           </td>
                         </tr>
                       </tbody>
@@ -346,11 +490,7 @@
                             <b>Start upskilling.</b>
                           </td>
                           <td rowspan="3" width="50%">
-                            <img
-                              src="phone-screen-welcome.png"
-                              alt="app welcome"
-                              width="100%"
-                            />
+                            <img src="http://cdn.mcauto-images-production.sendgrid.net/6007f2d1ca63ad30/19a7fa67-d074-4fb3-babf-cd1910be2d3a/800x858.png" alt="app welcome" width="100%">
                           </td>
                         </tr>
                         <tr>
@@ -373,7 +513,7 @@
                                 target=""
                                 alt="Google Play Store"
                                 title="Google Play Store"
-                                href="{{playStoreUrl}}"
+                                href="https://google.com?q&#x3D;1"
                                 coords="0,20,56,75"
                                 shape="rect"
                               />
@@ -381,7 +521,7 @@
                                 target=""
                                 alt="Apple App Store"
                                 title="Apple App Store"
-                                href="{{appStoreUrl}}"
+                                href="https://google.com?q&#x3D;1"
                                 coords="68,20,120,75"
                                 shape="rect"
                               />
@@ -395,7 +535,7 @@
                       <tbody>
                         <tr>
                           <td>
-                            <img src="hr.png" alt="divider" width="100%" />
+                            <img src="http://cdn.mcauto-images-production.sendgrid.net/6007f2d1ca63ad30/d3887d3c-ea7f-4e42-b3a3-0b4d652c633a/2578x40.png" alt="divider" width="100%">
                           </td>
                         </tr>
                       </tbody>
@@ -421,7 +561,7 @@
                       <tbody>
                         <tr>
                           <td width="50%" align="center" rowspan="3">
-                            <img width="350px" src="mood.png" alt="mood" />
+                            <img width="350px" src="http://cdn.mcauto-images-production.sendgrid.net/6007f2d1ca63ad30/c418e545-566c-4f83-a857-1800b08b6c5e/740x452.png" alt="mood">
                           </td>
                           <td class="explore_gleac_title">
                             You need to be in the mood
@@ -443,12 +583,8 @@
                                 </tr>
                                 <tr>
                                   <td style="padding-top: 10px">
-                                    <a href="{{exploreGleacUrl}}">
-                                      <img
-                                        src="explore-gleac-purple.png"
-                                        alt="Explore Gleac Button"
-                                        height="35px"
-                                      />
+                                    <a href="https://google.com">
+                                      <img src="http://cdn.mcauto-images-production.sendgrid.net/6007f2d1ca63ad30/13ef1bfb-5933-4b50-bbd2-fb3fc1a09e1a/300x96.png" alt="Explore Gleac Button" height="35px">
                                     </a>
                                   </td>
                                 </tr>
@@ -462,7 +598,7 @@
                       <tbody>
                         <tr>
                           <td width="50%" align="center" rowspan="3">
-                            <img width="350px" src="one.png" alt="number one" />
+                            <img width="350px" src="http://cdn.mcauto-images-production.sendgrid.net/6007f2d1ca63ad30/1e4dff34-2679-4f91-b1c2-73b80336749b/740x452.png" alt="number one">
                           </td>
                           <td class="explore_gleac_title">
                             You want to be No. 1
@@ -482,12 +618,8 @@
                                 </tr>
                                 <tr>
                                   <td style="padding-top: 10px">
-                                    <a href="{{exploreGleacUrl}}">
-                                      <img
-                                        src="explore-gleac-purple.png"
-                                        alt="Explore Gleac Button"
-                                        height="35px"
-                                      />
+                                    <a href="https://google.com">
+                                      <img src="http://cdn.mcauto-images-production.sendgrid.net/6007f2d1ca63ad30/13ef1bfb-5933-4b50-bbd2-fb3fc1a09e1a/300x96.png" alt="Explore Gleac Button" height="35px">
                                     </a>
                                   </td>
                                 </tr>
@@ -501,7 +633,7 @@
                       <tbody>
                         <tr>
                           <td width="50%" align="center" rowspan="2">
-                            <img width="350px" src="job.png" alt="job" />
+                            <img width="350px" src="http://cdn.mcauto-images-production.sendgrid.net/6007f2d1ca63ad30/cd4f69ff-d2f6-4ea8-93f8-71e96e260329/740x452.png" alt="job">
                           </td>
                           <td class="explore_gleac_title">
                             You need to find a job
@@ -522,12 +654,8 @@
                                 </tr>
                                 <tr>
                                   <td style="padding-top: 10px">
-                                    <a href="{{exploreGleacUrl}}">
-                                      <img
-                                        src="explore-gleac-purple.png"
-                                        alt="Explore Gleac Button"
-                                        height="35px"
-                                      />
+                                    <a href="https://google.com">
+                                      <img src="http://cdn.mcauto-images-production.sendgrid.net/6007f2d1ca63ad30/13ef1bfb-5933-4b50-bbd2-fb3fc1a09e1a/300x96.png" alt="Explore Gleac Button" height="35px">
                                     </a>
                                   </td>
                                 </tr>
@@ -542,7 +670,7 @@
                       <tbody>
                         <tr>
                           <td>
-                            <img src="hr.png" alt="divider" width="100%" />
+                            <img src="http://cdn.mcauto-images-production.sendgrid.net/6007f2d1ca63ad30/d3887d3c-ea7f-4e42-b3a3-0b4d652c633a/2578x40.png" alt="divider" width="100%">
                           </td>
                         </tr>
                       </tbody>
@@ -562,7 +690,7 @@
                         </tr>
                         <tr>
                           <td style="padding-bottom: 20px">
-                            <a href="{{masterTestUrl}}" style="color: #000000">
+                            <a href="https://google.com" style="color: #000000">
                               Take our master benchmark
                             </a>
                             and get a fuller picture of the best careers for
@@ -610,7 +738,7 @@
                   <td>
                     <a
                       style="color: grey; font-weight: bold"
-                      href="{{unsubscribeUrl}}"
+                      href="https://google.com"
                     >
                       Unsubscribe
                     </a>
